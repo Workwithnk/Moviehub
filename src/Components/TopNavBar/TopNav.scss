@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.TopNavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+  // background-color: rgba(0, 0, 0, 1);
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  //   rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(20px);
+
+  h1 a {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+  }
+
+  .TopNavBar__links {
+    color: #fff;
+    list-style: none;
+    cursor: pointer;
+  }
+  .TopNavBar__followLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    background: #e74c3c;
+    padding: 5px 8px;
+    border-radius: 10px;
+  }
+  .TopNavBar__followIcon {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 5px;
+  }
+}

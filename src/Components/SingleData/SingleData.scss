@@ -1,0 +1,78 @@
+@mixin flexData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SingleData {
+  // @include flexData;
+  // flex-direction: column;
+  position: relative;
+  width: 246px;
+  height: 400px;
+  margin: 2% 2%;
+  background-color: #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.45s, -webkit-transform 0.45s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  & > img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: fill;
+    width: 246px;
+    height: 280px;
+  }
+  .SingleData__details {
+    @include flexData;
+    flex-direction: column;
+    height: 100px;
+    overflow: scroll;
+    h5 {
+      font-size: 18px;
+      margin: 3px 9px;
+      font-family: "Poppins", sans-serif;
+      letter-spacing: 0px;
+    }
+
+    .SingleData__btnContaiber {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+    .SingleData__btnContaiber > button {
+      border: none;
+      padding: 10px 12px;
+      cursor: pointer;
+      font-size: 15px;
+      background-color: rgb(231, 76, 60);
+      color: #fff;
+      border-top-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .SingleData {
+    width: 91%;
+    height: 465px;
+  }
+  .SingleData > img {
+    width: 100%;
+    height: 315px;
+  }
+  .SingleData .SingleData__details h5 {
+    font-size: 1.5rem;
+  }
+  .SingleData .SingleData__details .SingleData__btnContaiber > button {
+    font-size: 1.4rem;
+  }
+  .SingleData:hover {
+    transform: scale(0.9);
+  }
+}

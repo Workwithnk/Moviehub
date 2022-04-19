@@ -1,0 +1,19 @@
+.PageDetails {
+  margin-bottom: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .btn {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 15px;
+    margin: 0px 6px;
+    background-color: #353b48;
+    color: white;
+    &:disabled {
+      background-color: #616879;
+    }
+  }
+}

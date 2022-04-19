@@ -1,0 +1,66 @@
+.BottomNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  background: rgba(56, 56, 56, 0.7);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 1% 0%;
+  z-index: 10;
+  font-family: "Poppins", sans-serif;
+}
+
+.BottomNav .BottomNav__linkContainer {
+  height: 40px;
+  width: 300px;
+}
+
+.BottomNav .BottomNav__linkContainer .BottomNav_Links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.BottomNav .BottomNav__linkContainer .BottomNav_Links .BottomNav__Icon {
+  font-size: 20px;
+}
+
+.BottomNav .activeLink .BottomNav__Icon {
+  color: #e74c3c;
+  font-size: 30px;
+}
+
+.BottomNav .activeLink .BottomNav_Links h4 {
+  color: #e74c3c;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .BottomNav {
+    height: 90px;
+  }
+  .BottomNav .BottomNav__linkContainer .BottomNav_Links .BottomNav__Icon {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=BottomNav.css.map */

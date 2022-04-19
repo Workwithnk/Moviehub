@@ -1,0 +1,36 @@
+.Trending {
+  padding: 2% 0% 8% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  margin-top: -22%;
+}
+
+.Trending::before {
+  content: "";
+  width: 100%;
+  height: 150px;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(rgba(0, 0, 0, 0.2)), color-stop(rgba(0, 0, 0, 0.4)), color-stop(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.9)), to(black));
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9), black);
+  position: absolute;
+  top: 22vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .Trending {
+    padding: 2% 0% 28% 0%;
+  }
+  .Intro__details .intro__rating {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=Trending.css.map */

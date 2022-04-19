@@ -1,0 +1,33 @@
+.Movie {
+  padding: 2% 0% 5% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 900px) {
+  .Movie {
+    padding: 2% 0% 10% 0%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Movie {
+    padding: 2% 0% 20% 0%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Movie {
+    padding: 2% 0% 28% 0%;
+  }
+}
+/*# sourceMappingURL=Movie.css.map */

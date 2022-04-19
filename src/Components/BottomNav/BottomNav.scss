@@ -1,0 +1,49 @@
+.BottomNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  bottom: 0%;
+  background: rgba(56, 56, 56, 0.7);
+  backdrop-filter: blur(20px);
+  padding: 1% 0%;
+  z-index: 10;
+  font-family: "Poppins", sans-serif;
+
+  .BottomNav__linkContainer {
+    height: 40px;
+    width: 300px;
+    .BottomNav_Links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #fff;
+      flex-direction: column;
+
+      .BottomNav__Icon {
+        font-size: 20px;
+      }
+    }
+  }
+  .activeLink {
+    .BottomNav__Icon {
+      color: #e74c3c;
+      font-size: 30px;
+    }
+    .BottomNav_Links h4 {
+      color: #e74c3c;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .BottomNav {
+    height: 90px;
+  }
+  .BottomNav .BottomNav__linkContainer .BottomNav_Links .BottomNav__Icon {
+    font-size: 1.2rem;
+  }
+}

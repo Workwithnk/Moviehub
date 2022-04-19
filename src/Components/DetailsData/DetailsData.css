@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&display=swap");
+.DetailsData__container {
+  padding-bottom: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.DetailsData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70vw;
+  margin: 2% 0%;
+}
+
+.DetailsData .DetailsData__iframe {
+  width: 392px;
+  height: 222px;
+  border-radius: 10px;
+  border: none;
+}
+
+.DetailsData .DetailsData__details {
+  margin-left: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+.DetailsData .DetailsData__details > h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+}
+
+.DetailsData .DetailsData__details > h3 {
+  font-family: "Montserrat", sans-serif;
+  margin: 2% 0%;
+}
+
+.DetailsData .DetailsData__details > p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+  .DetailsData {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80vw;
+  }
+  .DetailsData .DetailsData__details {
+    width: 100%;
+  }
+  .DetailsData__container {
+    padding-bottom: 10%;
+  }
+  .DetailsData .DetailsData__iframe {
+    width: 100%;
+  }
+  .DetailsData {
+    width: 90vw;
+    margin-bottom: 6%;
+  }
+  .DetailsData__container {
+    padding-bottom: 27%;
+  }
+  .DetailsData__altImage {
+    width: 80vw;
+  }
+}
+/*# sourceMappingURL=DetailsData.css.map */

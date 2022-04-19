@@ -1,0 +1,28 @@
+.PageDetails {
+  margin-bottom: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.PageDetails .btn {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 15px;
+  margin: 0px 6px;
+  background-color: #353b48;
+  color: white;
+}
+
+.PageDetails .btn:disabled {
+  background-color: #616879;
+}
+/*# sourceMappingURL=PageDetails.css.map */
